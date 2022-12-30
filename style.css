@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: 'Inter';
+}
+
+/* navbar style */
+#navbar_wrapper header .navbar
+{
+    position: fixed;
+    width: 100%;
+}
+.navbar-collapse{
+    justify-content: end;
+}
+
+/* bussiness section */
+.bussiness{
+    padding: 4rem;
+    /* animation: Fade in for 2 seconds; */
+}
+.bussiness-contend {
+    opacity: 1;
+    /* animation: fade 5s linear; */
+    animation: fade 5s ease-in-out infinite;
+    /* animation: Fade in for 2 seconds; */
+}
+
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+/* .bussiness{
+    background-color: black;
+    height: 60vh;
+    width: 100%;
+}
+.bussiness_contend{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-left: 10rem;
+   
+    font-size: 5rem;
+    color: #FFFFFF;
+   
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.contend_header{
+    font-size: 4rem;
+    text-align: center;
+}
+.bussiness_img img{
+    width: 20%;
+    margin-left: 45%;
+    margin-top: -20%;
+} */
+
+/* About section */
+
+.image img{
+   width: 90%;
+   padding: 5%;
+}
+
+
+/* services */
+
+.custum_service{
+    overflow-x: scroll;
+    width: 200%;
+}
+ .common{
+    border: 5px solid black;
+     padding: 2rem;
+    width: 30%;
+    margin-left: 2rem;
+    font-size: 1rem; 
+  
+} 
+.common:hover{
+    background-color: black;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+/* contact secton */
+#contact{
+    margin-top: 2rem;
+    background-color: black;
+    height: 30rem;
+   
+    
+}
+
+#contact .contact_container h1{
+    text-align: center;
+    color:#FFFFFF;
+}
+.form-control{
+    background-color: black;
+    color: #FFFFFF;
+    width: 50%;
+    
+}
+.form_contend{
+    margin-left: 20rem;
+}
+.form-control:hover{
+    border: 2px solid palevioletred;
+}
+.form_input{
+    width: 50rem;
+    margin-top: 1.5rem;
+   border-radius: 3px;
+}
+.form-contend{
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+/* about meadia */
+@media screen and (max-width: 750px) {
+    .about-media {
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
+  }
+  /* bussiness section */
+  @media screen and (max-width: 995px) and (min-width:500px)  {
+    .bussiness-media {
+      display: grid;
+      grid-template-columns: 70% 30%;
+    }
+    .bussiness_img{
+        width: 100%;
+    }
+  }
+  @media screen and  (max-width:499px)  {
+    .bussiness-media {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .bussiness_img{
+        width: 110%;
+    }
+  }
+  /* contact */
+  @media screen and (max-width: 900px) {
+   .contact_container{
+    margin-left: -295px;
+   }
+   .contact_container h1{
+    margin-left: 235px;
+   }
+  }
